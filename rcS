@@ -1,0 +1,11 @@
+#!/bin/sh
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+
+dmesg -n 1
+
+ip link set lo up
+ip link set eth0 up
+
+udhcpc -b -i eth0 -s /usr/share/udhcpc/default.script

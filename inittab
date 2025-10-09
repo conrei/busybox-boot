@@ -1,0 +1,4 @@
+::sysinit:/etc/init.d/rcS
+::respawn:/bin/cttyhack /bin/sh
+::restart:/init
+::ctrlaltdel:/sbin/reboot
