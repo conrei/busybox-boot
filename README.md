@@ -56,6 +56,7 @@ cd busybox-1.37.0
 
 export BUSYBOX_DIR=$(pwd)
 ```
+If the official busybox mirror is down, try [this mirror](https://github.com/conrei/busybox-mirror/releases) instead.
 
 Configure and build busybox:
 ```bash
